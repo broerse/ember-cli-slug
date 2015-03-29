@@ -1,0 +1,17 @@
+<nav class="navbar navbar-default" id="main-menu">
+  <div class="container-fluid">
+
+    <hr />
+    <div>
+      <ul class="nav navbar-nav" role="tablist">
+        {{#each arrangedContent as |site|}}
+          <li role="presentation">{{#link-to 'site' site}}{{site.title}}{{/link-to}}</li>
+        {{/each}}
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+{{outlet}}
+
