@@ -1,7 +1,7 @@
 <nav class="navbar navbar-default" id="main-menu">
   <div>
     <ul class="nav navbar-nav" role="tablist">
-      {{#each pages as |page|}}
+      {{#each model as |page|}}
         <li role="presentation">{{#link-to 'page' page}} {{page.title}} {{/link-to}}</li>
 	    {{/each}}
 	  </ul>
